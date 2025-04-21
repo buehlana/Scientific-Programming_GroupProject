@@ -1,4 +1,4 @@
-1. Collection of real-world data
+DONE 1. Collection of real-world data  
 📌 Use yfinance (a Python wrapper around Yahoo Finance API) to get historical stock data.
 
 2. Data preparation
@@ -38,6 +38,7 @@ Include p-value in the result
 📤 Push project to GitHub with a README.md
 Additional Requirements
 
+Extra points: 
 (2) Web Scraper / Web API
 ✅ Use yfinance (counts as API)
 Optional: Use requests + BeautifulSoup to scrape news headlines for sentiment
@@ -77,10 +78,10 @@ Structure:
 
 Project Development Steps
 
-🔹 Phase 1: Planning
+ 🔹 Phase 1: Planning
  Choose a few stocks (e.g., AAPL, TSLA, MSFT)
  Define time period (e.g., last 6 months)
-🔹 Phase 2: Data Collection
+ 🔹 Phase 2: Data Collection
  Use yfinance to download historical data (including open & close)
  Store data in SQLite
 🔹 Phase 3: Data Processing
