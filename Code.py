@@ -1,1 +1,15 @@
 
+# Libraries
+import os
+import numpy as np
+import pandas as pd
+import yfinance as yf
+from datetime import datetime
+import matplotlib.pyplot as plt
+
+# Settings
+import warnings
+warnings.filterwarnings("ignore")
+
+# Current working directory
+print(f'Current working directory: {os.getcwd()}')
