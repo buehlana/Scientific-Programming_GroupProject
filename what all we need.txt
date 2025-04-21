@@ -1,1 +1,116 @@
+1. Collection of real-world data
+📌 Use yfinance (a Python wrapper around Yahoo Finance API) to get historical stock data.
+
+2. Data preparation
+🔍 Use pandas for cleaning and processing.
+🧹 Apply regular expressions if you extract extra info (e.g., from news headlines or symbols).
+
+3. Python data structures
+Use:
+lists to hold stock symbols
+dicts to store stock-related info
+sets if needed to find unique items
+tuples for time-based records
+pandas.DataFrame for structured analysis
+
+4. Conditional & loop control
+Use if, for, and while for:
+Filtering data
+Iterating over stock lists or dates
+
+5. Programming paradigm
+Use functions (procedural) or define classes for Stock/Strategy (OOP)
+
+6. Visualizations
+Use matplotlib, seaborn, or plotly to:
+Compare profits across days
+Show opening vs. closing prices
+Highlight which strategy performed better
+
+7. Statistical analysis
+Calculate:
+Daily profit for each strategy
+Use scipy.stats.ttest_rel or pearsonr for correlation or comparison
+Include p-value in the result
+
+8. Data/code publishing
+📦 Use .gitignore to exclude large datasets
+📤 Push project to GitHub with a README.md
+Additional Requirements
+
+(2) Web Scraper / Web API
+✅ Use yfinance (counts as API)
+Optional: Use requests + BeautifulSoup to scrape news headlines for sentiment
+
+(3) Use of a database
+Store stock data and profit calculations in SQLite
+Use sqlite3 or SQLAlchemy in Python
+Perform queries like:
+Average profit by strategy
+Days where one strategy outperforms the other
+
+(4) Use of LLM
+Use OpenAI's API or transformers for:
+Summarizing financial news
+Detecting trends in stock news
+Suggesting trading strategy based on text data
+
+(5) Simple web app
+Use Streamlit or Flask to:
+Display a dashboard with:
+Stock selector
+Date range
+Charts of profits
+Statistical summary
+
+(6) GitHub repository
+Create a clean README.md
+Add a .gitignore
+Structure:
+/project-folder
+  ├── data/              # empty or .gitignored
+  ├── app/               # web app code
+  ├── notebooks/         # analysis in Jupyter
+  ├── scripts/           # data collection and processing
+  ├── requirements.txt   # Python packages
+  └── README.md
+
+Project Development Steps
+
+🔹 Phase 1: Planning
+ Choose a few stocks (e.g., AAPL, TSLA, MSFT)
+ Define time period (e.g., last 6 months)
+🔹 Phase 2: Data Collection
+ Use yfinance to download historical data (including open & close)
+ Store data in SQLite
+🔹 Phase 3: Data Processing
+ Write functions to calculate:
+Strategy A: Buy open, sell close
+Strategy B: Buy close, sell next open
+ Calculate profit per day
+ Store results in DataFrame and database
+🔹 Phase 4: Visualization
+ Plot daily prices
+ Plot profits by strategy
+ Show average profit, total return, etc.
+🔹 Phase 5: Statistical Analysis
+ Use scipy.stats to:
+Compare mean profits
+Perform t-test
+Output p-value
+🔹 Phase 6: LLM Integration
+ Use OpenAI API (or similar) to:
+Summarize financial news
+Give a strategy recommendation
+(Optional) Extract info from scraped headlines
+🔹 Phase 7: Web App
+ Build a Streamlit dashboard:
+Input: stock ticker, date range
+Output: charts, metrics, LLM insight
+🔹 Phase 8: Final Touches
+ Document code
+ Push to GitHub
+ Add .gitignore
+ Include example outputs in README 
+
 
