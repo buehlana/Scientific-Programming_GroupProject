@@ -1,4 +1,4 @@
-DONE 1. Collection of real-world data  
+1. Collection of real-world data  
 📌 Use yfinance (a Python wrapper around Yahoo Finance API) to get historical stock data.
 
 2. Data preparation
@@ -78,12 +78,16 @@ Structure:
 
 Project Development Steps
 
- 🔹 Phase 1: Planning
+ DONE 🔹 : Phase 1: Planning
  Choose a few stocks (e.g., AAPL, TSLA, MSFT)
- Define time period (e.g., last 6 months)
- 🔹 Phase 2: Data Collection
+***Done: 'AAPL',  'MSFT', 'GOOGL', 'META', 'NFLX'
+ Define time period 
+ ***Done: last 6 months 
+
+ DONE 🔹 Phase 2: Data Collection
  Use yfinance to download historical data (including open & close)
  Store data in SQLite
+
 🔹 Phase 3: Data Processing
  Write functions to calculate:
 Strategy A: Buy open, sell close
