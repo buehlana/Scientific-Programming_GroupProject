@@ -1,3 +1,45 @@
+Project Development Steps
+
+ DONE 🔹 : Phase 1: Planning
+ Choose a few stocks (e.g., AAPL, TSLA, MSFT)
+***Done: 'AAPL',  'MSFT', 'GOOGL', 'META', 'NFLX'
+ Define time period 
+ ***Done: last 6 months 
+
+ DONE 🔹 Phase 2: Data Collection
+ Use yfinance to download historical data (including open & close)
+ Store data in SQLite
+
+🔹 Phase 3: Data Processing
+ Write functions to calculate:
+Strategy A: Buy open, sell close
+Strategy B: Buy close, sell next open
+ Calculate profit per day
+ Store results in DataFrame and database
+🔹 Phase 4: Visualization
+ Plot daily prices
+ Plot profits by strategy
+ Show average profit, total return, etc.
+🔹 Phase 5: Statistical Analysis
+ Use scipy.stats to:
+Compare mean profits
+Perform t-test
+Output p-value
+🔹 Phase 6: LLM Integration
+ Use OpenAI API (or similar) to:
+Summarize financial news
+Give a strategy recommendation
+(Optional) Extract info from scraped headlines
+🔹 Phase 7: Web App
+ Build a Streamlit dashboard:
+Input: stock ticker, date range
+Output: charts, metrics, LLM insight
+🔹 Phase 8: Final Touches
+ Document code
+ Push to GitHub
+ Add .gitignore
+ Include example outputs in README 
+
 1. Collection of real-world data  
 📌 Use yfinance (a Python wrapper around Yahoo Finance API) to get historical stock data.
 
@@ -76,46 +118,6 @@ Structure:
   ├── requirements.txt   # Python packages
   └── README.md
 
-Project Development Steps
 
- DONE 🔹 : Phase 1: Planning
- Choose a few stocks (e.g., AAPL, TSLA, MSFT)
-***Done: 'AAPL',  'MSFT', 'GOOGL', 'META', 'NFLX'
- Define time period 
- ***Done: last 6 months 
-
- DONE 🔹 Phase 2: Data Collection
- Use yfinance to download historical data (including open & close)
- Store data in SQLite
-
-🔹 Phase 3: Data Processing
- Write functions to calculate:
-Strategy A: Buy open, sell close
-Strategy B: Buy close, sell next open
- Calculate profit per day
- Store results in DataFrame and database
-🔹 Phase 4: Visualization
- Plot daily prices
- Plot profits by strategy
- Show average profit, total return, etc.
-🔹 Phase 5: Statistical Analysis
- Use scipy.stats to:
-Compare mean profits
-Perform t-test
-Output p-value
-🔹 Phase 6: LLM Integration
- Use OpenAI API (or similar) to:
-Summarize financial news
-Give a strategy recommendation
-(Optional) Extract info from scraped headlines
-🔹 Phase 7: Web App
- Build a Streamlit dashboard:
-Input: stock ticker, date range
-Output: charts, metrics, LLM insight
-🔹 Phase 8: Final Touches
- Document code
- Push to GitHub
- Add .gitignore
- Include example outputs in README 
 
 
