@@ -10,26 +10,27 @@ Project Development Steps
  Use yfinance to download historical data (including open & close)
  Store data in SQLite
 
-DONE 🔹 Phase 3: Data Processing
+🔹 ??? DONE ?? Phase 3: Data Processing
  Write functions to calculate:
 Strategy A: Buy open, sell close
 Strategy B: Buy close, sell next open
- Calculate profit per day
- Store results in DataFrame and database
-DONE 🔹 Phase 4: Visualization
+ TO ADD Calculate profit per day
+ TO UPDATE Store results in DataFrame  
+🔹 ??? DONE ONLY FOR AAPL - DONE FOR EACH STOCK ANASTASIIA  Phase 4: Visualization
  Plot daily prices
  Plot profits by strategy
  Show average profit, total return, etc.
-🔹 Phase 5: Statistical Analysis
+🔹 DONE Phase 5: Statistical Analysis
  Use scipy.stats to:
 Compare mean profits
 Perform t-test
 Output p-value
-🔹 Phase 6: LLM Integration
+🔹 PARTIALLY-DONE - TO DISCUSS : Phase 6: LLM Integration
  Use OpenAI API (or similar) to:
 Summarize financial news
 Give a strategy recommendation
-(Optional) Extract info from scraped headlines
+
+NOT DONE (Optional) Extract info from scraped headlines 
 🔹 Phase 7: Web App
  Build a Streamlit dashboard:
 Input: stock ticker, date range
