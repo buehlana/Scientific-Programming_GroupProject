@@ -10,13 +10,13 @@ Project Development Steps
  Use yfinance to download historical data (including open & close)
  Store data in SQLite
 
-🔹 Phase 3: Data Processing
+DONE 🔹 Phase 3: Data Processing
  Write functions to calculate:
 Strategy A: Buy open, sell close
 Strategy B: Buy close, sell next open
  Calculate profit per day
  Store results in DataFrame and database
-🔹 Phase 4: Visualization
+DONE 🔹 Phase 4: Visualization
  Plot daily prices
  Plot profits by strategy
  Show average profit, total return, etc.
