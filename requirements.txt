@@ -1,0 +1,12 @@
+
+os
+os.system('pip install yfinance') 
+#to install the yfinance in the current environment
+json
+numpy
+pandas 
+yfinance as 
+matplotlib.pyplot 
+scipy.stats 
+re
+sqlite3
