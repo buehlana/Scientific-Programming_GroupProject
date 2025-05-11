@@ -1,0 +1,9 @@
+# Ignore Ollama models
+~/.ollama/*
+models/*
+*.bin
+*.gguf
+
+# Python cache
+__pycache__/
+*.pyc
