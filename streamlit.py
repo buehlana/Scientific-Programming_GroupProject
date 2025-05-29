@@ -13,8 +13,13 @@ st.title("Stock Strategy Dashboard (Open→Close vs. Close→Next Open)")
 # --- Sidebar for User Input ---
 stocks = ['AAPL', 'GME', 'GOOGL', 'META', 'NFLX']
 stock = st.sidebar.selectbox("Select a stock ticker", stocks, index=0)
+today = datetime.today().date()
 start_date = st.sidebar.date_input("Start date", datetime(2020, 1, 1))
-end_date = st.sidebar.date_input("End date", datetime(2025, 4, 25))
+end_date = st.sidebar.date_input("End date", today)
+
+if end_date > today:
+    st.warning("End date cannot be in the future. Setting end date to today.")
+    end_date = today
 
 st.info(
     "With this dashboard, you can compare two simple trading strategies for different stocks and time periods. "
@@ -35,8 +40,9 @@ def load_data(ticker, start, end):
 
 data = load_data(stock, start_date, end_date)
 
+# Debug: Show the head of the DataFrame to verify download
 if data.empty:
-    st.error("No data for this period/ticker!")
+    st.error(f"No data for {stock} in this period! Try changing the date range or check the ticker.")
     st.stop()
 
 st.write(f"**Data for {stock} from {start_date} to {end_date}** ({len(data)} rows)")
@@ -129,4 +135,4 @@ else:
 
 # --- Optional: Download Button ---
 st.markdown("---")
-st.download_button("Download data as CSV", data.to_csv(index=False), file_name=f"{stock}_strategies.csv")
+st.download_button("Download data as CSV", data.to_csv(index=False), file_name=f"{stock}_strategies.csv", mime="text/csv")
