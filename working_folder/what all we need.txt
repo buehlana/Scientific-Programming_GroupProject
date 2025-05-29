@@ -42,11 +42,11 @@ Output: charts, metrics, LLM insight
  Include example outputs in README 
 
 1. Collection of real-world data  
-📌 Use yfinance (a Python wrapper around Yahoo Finance API) to get historical stock data.
+ yfinance (a Python wrapper around Yahoo Finance API) to get historical stock data.
 
 2. Data preparation
-🔍 Use pandas for cleaning and processing.
-🧹 Apply regular expressions if you extract extra info (e.g., from news headlines or symbols).
+Use pandas for cleaning and processing.
+Apply regular expressions if you extract extra info (e.g., from news headlines or symbols).
 
 3. Python data structures
 Use:
@@ -77,13 +77,13 @@ Use scipy.stats.ttest_rel or pearsonr for correlation or comparison
 Include p-value in the result
 
 8. Data/code publishing
-📦 Use .gitignore to exclude large datasets
-📤 Push project to GitHub with a README.md
+Use .gitignore to exclude large datasets
+Push project to GitHub with a README.md
 Additional Requirements
 
 Extra points: 
 (2) Web Scraper / Web API
-✅ Use yfinance (counts as API)
+Use yfinance (counts as API)
 Optional: Use requests + BeautifulSoup to scrape news headlines for sentiment
 
 (3) Use of a database
@@ -110,7 +110,7 @@ Statistical summary
 (6) GitHub repository
 Create a clean README.md
 Add a .gitignore
-Structure:
+Structure ??? 
 /project-folder
   ├── data/              # empty or .gitignored
   ├── app/               # web app code
