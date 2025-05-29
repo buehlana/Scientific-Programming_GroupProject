@@ -76,7 +76,7 @@ st.write(f"Valid data points after dropna: {len(profits_a)}")
 st.write(valid[['Date', 'Strategy_A', 'Strategy_B']].head(10))
 
 # --- Plots ---
-tab1, tab2, tab3 = st.tabs(["Daily Profits", "Closing Prices", "Cumulative Profits"])
+tab1, tab2, tab3, tab4 = st.tabs(["Daily Profits", "Closing Prices", "Opening Prices", "Cumulative Profits"])
 
 with tab1:
     st.subheader("Daily Profit per Strategy")
@@ -100,6 +100,15 @@ with tab2:
     st.pyplot(fig2)
 
 with tab3:
+    st.subheader("Opening Price")
+    fig_open, ax_open = plt.subplots(figsize=(10, 4))
+    ax_open.plot(data['Date'], data['Open'], color='orange')
+    ax_open.set_title(f"{stock}: Daily Opening Price")
+    ax_open.set_xlabel("Date")
+    ax_open.set_ylabel("Price ($)")
+    st.pyplot(fig_open)
+
+with tab4:
     st.subheader("Cumulative Profits (summed up)")
     fig3, ax3 = plt.subplots(figsize=(10, 4))
     ax3.plot(data['Date'], data['Cumulative_A'], label='Strategy A')
