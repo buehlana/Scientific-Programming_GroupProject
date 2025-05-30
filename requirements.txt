@@ -10,3 +10,4 @@ matplotlib.pyplot
 scipy.stats 
 re
 sqlite3
+streamlit as st
