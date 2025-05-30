@@ -6,13 +6,16 @@ It collects real-world stock data, prepares it, saves it into a csv file, a SQLi
 ## Features
 1. Real-world data collection via Yahoo Finance API (yfinance)
 2. Data cleaning, preparation, and validation (with regex)
-3. Storage and retrieval from a SQLite database
-4. QQ-plot analysis for normality checking
-5. Statistical comparison of two trading strategies using paired t-tests
-6. Multiple visualizations: profit plots, cumulative returns
-7. Full codebase ready for local run (no external API keys needed)
-8. ollama
-9. Streamlit 
+3. Local data storage as CSV and in a SQLite database
+4. Computation of two trading strategies:
+    Strategy A: Buy at Open → Sell at Close
+    Strategy B: Buy at Close → Sell at Next Open
+5. QQ-plot analysis to test normality assumptions before statistical testing
+6. Statistical comparison of two trading strategies using paired t-tests
+7. Multiple visualizations: profit plots, cumulative returns
+8. Ollama integration to summarize statistically significant results using a local LLM
+9. Interactive Streamlit dashboard for exploring strategies by stock and time range
+10. No API key required, fully functional in a local Python environment 
 
 ## Project Structure
 .gitinore

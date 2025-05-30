@@ -4,6 +4,42 @@ models/*
 *.bin
 *.gguf
 
-# Python cache
+# Byte-compiled / cache files
+cache/
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# VS Code
+.vscode/
+
+
+# System files
+.DS_Store
+Thumbs.db
+
+# SQLite database and CSV exports
+stocks.db
+*.sqlite
+*.db
+stocks_data.csv
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Streamlit-specific
+.streamlit/
+
+# Image files and output screenshots 
+*.png
+*.jpg
+*.jpeg
