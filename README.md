@@ -11,6 +11,8 @@ It collects real-world stock data, prepares it, saves it into a csv file, a SQLi
 5. Statistical comparison of two trading strategies using paired t-tests
 6. Multiple visualizations: profit plots, cumulative returns
 7. Full codebase ready for local run (no external API keys needed)
+8. ollama
+9. Streamlit 
 
 ## Project Structure
 .gitinore
