@@ -38,7 +38,8 @@ This project connects to a locally running Ollama server and sends prompts to a 
 1. Install Python libraries:
 ```bash
 pip install -r requirements.txt
- 
+pip install streamlit
+run streamlit streamlit.py
 
 ## Streamlit Project 
  
