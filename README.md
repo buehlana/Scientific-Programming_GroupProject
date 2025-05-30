@@ -7,8 +7,8 @@ It collects real-world stock data, prepares it, saves it into a csv file, a SQLi
 1. Real-world data collection via Yahoo Finance API (yfinance)
 2. Data cleaning, preparation, and validation (with regex)
 3. Storage and retrieval from a SQLite database
-4. Statistical comparison of two trading strategies using paired t-tests
-5. QQ-plot analysis for normality checking
+4. QQ-plot analysis for normality checking
+5. Statistical comparison of two trading strategies using paired t-tests
 6. Multiple visualizations: profit plots, cumulative returns
 7. Full codebase ready for local run (no external API keys needed)
 
@@ -19,11 +19,12 @@ README.md
 requirements.txt
 stocks_data.csv
 stock.db
+streamlit.py
 
 ## Libraries needed for the project 
-can be found in requirements.txt
+can be found in requirements.txt 
 
-## My Ollama Project
+## Ollama Project
 
 ## Description
 This project connects to a locally running Ollama server and sends prompts to a downloaded model (e.g., Mistral).
@@ -39,3 +40,5 @@ This project connects to a locally running Ollama server and sends prompts to a 
 pip install -r requirements.txt
  
 
+## Streamlit Project 
+ 
